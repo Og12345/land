@@ -2,7 +2,11 @@
 	<div class="grid-curso">
 		<div class="grid-md">
 			<div class="title-search">
+<<<<<<< HEAD
 				<h3>Ache <span>seu Polo.</span></h3>
+=======
+				<h3>Ache <span>seu polo.</span></h3>
+>>>>>>> ca83c29b0416a08feadc87655fb552a57c7a509a
 				<a href="javascript:void" class="window-help"><i class="help"></i></a>
 				<div class="balao">
 					<p>

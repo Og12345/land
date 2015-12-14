@@ -700,3 +700,32 @@ require get_template_directory() . '/inc/jetpack.php';
  * Load custom nav walker
  */
 require get_template_directory() . '/inc/navwalker.php';
+
+### Alterações Lucas
+// Custom JS ---
+function theme_custom_script(){
+  $theme_url = get_template_directory_uri();
+  wp_enqueue_script('custom-script',$theme_url.'/js/custom.js');
+}
+add_action( 'wp_enqueue_scripts', 'theme_custom_script' );
+// ---
+
+// Variavel para ajax
+add_action('wp_head','pluginname_ajaxurl');
+function pluginname_ajaxurl() {
+  ?>
+  <script type="text/javascript">
+    var ajaxurl = '<?php echo admin_url('admin-ajax.php'); ?>';
+  </script>
+  <?php
+}
+
+//Ajax JSON
+function require_url(){
+  $data = get_template_directory_uri().'/js/json/estados.json';
+  $json = json_encode(array("json"=>$data));
+  echo $json;
+  exit();
+}
+add_action( 'wp_ajax_require_url', 'require_url' );
+add_action( 'wp_ajax_nopriv_require_url', 'require_url' );

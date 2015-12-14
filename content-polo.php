@@ -23,7 +23,7 @@ $polo_fields = array(
 
 $imagem_polo 			= get_field( $polo_fields['imagem_polo'] );
 $nome_polo 				= get_field( $polo_fields['nome_polo'] );
-$logo_diploma 			= get_field( $polo_fields['logo-diploma'] );
+$logo_diploma 			= '';
 $texto_logos 			= get_field( $polo_fields['texto_logos'] );
 $titulo_info_1 			= get_field( $polo_fields['titulo_info_1'] );
 $titulo_info_2 			= get_field( $polo_fields['titulo_info_2'] );
@@ -47,15 +47,6 @@ custom_breadcrumbs();
 					</div>
 					<div class="texto">
 						<h2><?php echo $nome_polo; ?></h2>
-
-						<div class="area-logos">
-							<p><?php echo $texto_logos; ?></p>
-
-							<div class="logo-img">
-								<img src="<?php echo $logo_diploma['url']; ?>" alt="<?php echo $logo_diploma['alt']; ?>" />
-							</div>
-						</div>
-
 						<p><?php echo $descricao_polo; ?></p>
 					</div>
 				</div>
