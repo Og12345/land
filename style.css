@@ -669,7 +669,7 @@ object {
 #secondary .widget > h3 {
   font-size: 25px;
   margin: 0;
-  color: #e0962f;
+  color: #051d38;
   text-align: center;
 }
 #secondary .widget a {
@@ -1952,7 +1952,7 @@ button[type=submit],
 }
 
 
-/* ACCORDION */
+/* ACCORDION *
 
 /* PÀGINA DOS CURSOS*/
 .article-single{
@@ -2120,7 +2120,7 @@ button[type=submit],
 }
 
 #secondary {
-    background-color: #213b6a;
+    background-color: #bdbdbd;
 }
 
 /* = form
@@ -2164,7 +2164,7 @@ form input[type=submit] {
 
 .desc-form {
   margin: 10px 0;
-  color: #fff;
+  color: #051d38;
   font-size: 14px;
   text-align: center;
   line-height: 15px;
