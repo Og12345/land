@@ -19,7 +19,7 @@
 				<form method="GET" action="" class="meeting_search_form" id="meeting_search_form" data-ajaxurl="<?php echo home_url(); ?>/wp-admin/admin-ajax.php">
 					<fieldset>
 						<div class="select-area">
-								<?php parent_locations_select(); ?>
+								<?php parent_locations_select(); ?>  
 						</div>
 						<div class="select-area">
 							<select name="cidade" id="cidade" disabled="disabled">
