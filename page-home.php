@@ -60,9 +60,11 @@ $video 			= get_field( $home_fields['video']);
 			<div class="info-banner">
 				<h2><?php echo $titulo; ?></h2>
 				<h1><?php echo $subtitulo; ?></h1>
-				<p><?php echo $descricao; ?></p>
+				<p  class="p-text"><?php //echo $descricao; ?> A qualidade de ensino de 3 instituições no oferecimento<br />
+de mais de 60 cursos entre de graduação, pós-graduação e<br /> cursos livres, na modalidade a distância, em mais de 100 polos <span class="ut-l" >credenciados.</span>                
+                </p>
 			</div>
-			<div class="area-logos">
+			<!--<div class="area-logos">
 				<div class="logo-img">
 					<img src="<?php echo $logo_cruzeiro['url']; ?>" alt="<?php echo $logo_cruzeiro['alt']; ?>" />
 				</div>
@@ -72,7 +74,7 @@ $video 			= get_field( $home_fields['video']);
 				<div class="logo-img">
 					<img src="<?php echo $logo_unifran['url']; ?>" alt="<?php echo $logo_unifran['alt']; ?>" />
 				</div>
-			</div>
+			</div> -->
 			<div class="area-links">
 				<div>
 					<a href="category/cursos" title="<?php echo $link_cta; ?>" class="cta-banner link"><?php echo $link_cta; ?></a>
