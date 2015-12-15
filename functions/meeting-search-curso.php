@@ -2,7 +2,7 @@
 function get_curso(){
 
    $parent_city = $_POST['parent_city'];
-   
+
       $args = array(
          'category'  => '8',
             'tax_query'             => array(
@@ -10,7 +10,8 @@ function get_curso(){
                   'taxonomy'        => 'taxonomy',
                   'terms'           => $parent_city,
                   'field'           => 'term_id',
-                  'hide_empty'      => false
+                  'hide_empty'      => false,
+                  'numberposts'     => -1
                )
             )
          );
