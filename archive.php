@@ -108,7 +108,7 @@ get_header(); ?>
 						</form>
 						<?php //echo do_shortcode('[searchandfilter fields="taxonomy" hierarchical="1" show_count="1" submit_label="Buscar"]'); ?>
 					</div>
-					<div id="page-home" class="btn-path-go go-up"></div>
+					<div id="page-home" class="btn-path-go go-down"></div>
 				</div>
 			</div>
 
