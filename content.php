@@ -24,7 +24,7 @@ if (in_category('Cursos EAD Cruzeiro do Sul')) :
 			<div class="name-wrap">
 				<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
 					<?php echo $nome_curso; ?>
-				</a>				
+				</a>
 			</div>
 			<?php if ( is_search() ) : // Only display Excerpts for Search ?>
 			<div class="entry-summary">
@@ -53,7 +53,7 @@ if (in_category('Cursos EAD Cruzeiro do Sul')) :
 			<div class="name-wrap">
 				<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
 					<?php echo $nome_polo; ?>
-				</a>				
+				</a>
 			</div>
 			<?php if ( is_search() ) : // Only display Excerpts for Search ?>
 			<div class="entry-summary">

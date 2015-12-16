@@ -6,7 +6,7 @@ jQuery("#cidade").change(function() {
     //clear options
     jQuery('#curso').html('');
     //reset the initial option
-    jQuery('#curso').append('<option>Selecione um curso ...</option>'); 
+    jQuery('#curso').append('<option>Selecione um curso ...</option>');
     jQuery.ajax({
         type: 'POST',
         url: ajax_url,
@@ -18,12 +18,12 @@ jQuery("#cidade").change(function() {
         success: function(data, textStatus, XMLHttpRequest){
             //append results
             if(data){
-                jQuery.each(data, function(i,v) {   
+                jQuery.each(data, function(i,v) {
                     //console.log(data);
                     jQuery('#curso')
                         .removeAttr('disabled')
                         .append(jQuery('<option>', { 'value' : v.name, 'data-url' : v.link })
-                        .text(v.name)); 
+                        .text(v.name));
                 });
             }
         },

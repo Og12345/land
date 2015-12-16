@@ -44,7 +44,7 @@ sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automatt
     font-family: 'blisslight';
     src: url('fonts/bliss-light.eot');
     src: url('fonts/bliss-light.eot?#iefix') format('embedded-opentype'),
-         
+
          url('fonts/bliss-light.woff') format('woff'),
          url('fonts/bliss-light.ttf') format('truetype'),
          url('fonts/bliss-light.svg#blisslight') format('svg');
@@ -56,7 +56,7 @@ sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automatt
     font-family: 'blissbold';
     src: url('fonts/bliss-bold.eot');
     src: url('fonts/bliss-bold.eot?#iefix') format('embedded-opentype'),
-         
+
          url('fonts/bliss-bold.woff') format('woff'),
          url('fonts/bliss-bold.ttf') format('truetype'),
          url('fonts/bliss-bold.svg#blissbold') format('svg');
@@ -1608,7 +1608,7 @@ button[type=submit],
     list-style:none;
     overflow:hidden;
 }
-  
+
 #breadcrumbs li {
     display:inline-block;
     vertical-align:middle;
@@ -1624,7 +1624,7 @@ button[type=submit],
 #breadcrumbs li a {
   color: #323232;
 }
-  
+
 #breadcrumbs .separator {
     font-size:18px;
     font-weight:100;
@@ -1961,7 +1961,7 @@ button[type=submit],
 }
 
 
-/* ACCORDION */ 
+/* ACCORDION */
 
 /* PÀGINA DOS CURSOS*/
 .article-single{
@@ -2023,7 +2023,7 @@ button[type=submit],
   width: 435px;
   margin: 0;
   margin-bottom: 20px;
-  font-size: 25px;  
+  font-size: 25px;
   font-weight: bold;
   text-align: left;
 }
@@ -2218,6 +2218,7 @@ color:	#FED309;
 #pesquisa{
   background: #213b6a url('img/bg-pesquisa.png') center left no-repeat;
   padding: 50px 0;
+  background-position: 0% 100%;
 }
 
 #pesquisa .title-search{
@@ -2313,7 +2314,7 @@ color:	#FED309;
 
 #pesquisa .search-form .submit-area .btn{
   border: 2px solid #FFFFFF;
-  background: transparent; 
+  background: transparent;
   width: 100%;
   border-radius: 0;
   padding: 14px 0;
@@ -2423,7 +2424,7 @@ form select:disabled{
   .wrapper .cta-form {
     display: inline;
   }
-  
+
   .form-sidebar{
     position: relative;
     top: 0 !important;
@@ -2563,31 +2564,203 @@ form select:disabled{
 
 .info-banner h1{
 font-family: 'EA Sports Covers SC 1.5';
-	color:#fed309;	
+	color:#fed309;
 	}
 .info-banner{
 	/*padding:425px 0 0 153px;*/
 		}
 .banner-home{
-padding-top:248px !important;	
+padding-top:248px !important;
 	}
-.p-text{		
-color:white; 
+.p-text{
+color:white;
 font-size:15px;
-max-width:499px; 
-text-align:right;		
-		}	
+max-width:499px;
+text-align:right;
+		}
 .ut-l{
 float:left;  width:100%; text-align:left;
 	}
-/* ********Ajuste  titulo para o bg ********** */	
+/* ********Ajuste  titulo para o bg ********** */
+
+/** Ajuste no menu do site **/
+.site-header{
+  position: fixed;
+  left: 0%;
+  right: 0%;
+}
+
+.shadow-menu{
+  z-index: 9 !important;
+  box-shadow: 0px 1px 6px 0px #000;
+}
+/** end **/
+
+/** ajuste na home **/
+.content-placement{
+  position: relative;
+}
+/** end **/
+
+/***  Ajustes página curso ***/
+.busca-curso-page{
+  background: #dfe1e2 !important;
+}
+
+.busca-curso-placement{
+  background: url('img/curso-bg.jpg') no-repeat;
+  background-size: 100%;
+  height: 700px;
+  position: relative;
+  background-position: 100% 50%;
+}
+
+.full-search-course{
+  margin-top: 60px !important;
+  max-width: 555px !important;
+  position: relative !important;
+  height: 100% !important;
+}
+
+.busca-curso-placement h1{
+  font-family: 'EA Sports Covers SC 1.5';
+  color:#fcb415;
+  line-height:56px;
+  letter-spacing:-2px;
+  text-align: center;
+  text-transform:uppercase;
+}
+
+#descr-select{
+  width: 97%;
+  height: auto;
+  overflow: auto;
+  position: relative;
+  margin: 0px auto;
+  margin-top: 60px;
+}
+
+#descr-select p{
+  color: #000;
+  font-size: 12px;
+  text-align: left;
+}
+
+.curso-config{
+  height: 90% !important;
+}
+
+.full-search-course .search-form{
+  max-width: 540px;
+  margin: 10px auto 0;
+}
+
+.full-search-course .search-form form{
+  max-width: 100%;
+}
+
+.full-search-course .search-form div{
+  width: 100%;
+}
+
+.full-search-course .search-form .select-area {
+  max-width: 265px;
+  margin: 20px auto 0;
+  float: left;
+}
+
+.full-search-course .search-form .select-area select{
+  color: #003663;
+  height: 35px;
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.full-search-course .search-form .submit-area {
+  max-width: 225px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.full-search-course .search-form .submit-area .btn{
+  border: 4px solid #003663;
+  background: transparent;
+  width: 100%;
+  border-radius: 0;
+  padding: 7px 0;
+  color: #003663;
+  font-size: 20px;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'EA Sports Covers SC 1.5';
+}
+
+.full-search-course .search-form .select-area:first-child{
+  margin-right: 10px;
+}
+
+.full-search-course .search-form form select:disabled{
+  background-color: #003663;
+  color: #fff;
+  cursor: no-drop;
+  outline: none;
+  border: none;
+  height: 35px;
+  appearance:none;
+}
+
+.btn-path-go, .btn-click,.video-btn,.footer-btn{
+  position: absolute;
+  bottom: 10%;
+  width: 50px !important;
+  height: 50px !important;
+  left: 45%;
+  cursor: pointer;
+}
+
+.footer-placement-left{
+  position: relative !important;
+}
+
+.btn-click{
+  left: 25% !important;
+  bottom: -10% !important;
+}
+
+.video-btn{
+  left: 27% !important;
+  bottom: 0% !important;
+}
+
+.footer-btn{
+  left: 46% !important;
+  bottom: -40% !important;
+}
+
+.go-up{
+  background: url('img/go-up-footer.png') no-repeat;
+  background-size: 90% 90%;
+}
+
+.go-down{
+  background: url('img/go-down.png') no-repeat;
+  background-size: 90% 90%;
+}
+
+.box-footer{
+  position: relative !important;
+}
+/*** end ***/
 
 @media screen and (min-width: 1920px) {
-.wrapper > .info-banner, .area-logos{
-margin-left:-47px;	
+  .wrapper > .info-banner, .area-logos{
+    margin-left:-47px;
+  }
 }
-}
-		
+
 @media screen and (min-width: 1680px) and (max-width: 1919px) {
 .wrapper > .info-banner, .area-logos{
 margin-left:6px;
@@ -2596,39 +2769,44 @@ margin-left:6px;
 
 @media screen and (min-width: 1599px) and (max-width:1679px) {
 .wrapper > .info-banner, .area-logos{
-margin-left:25px ;	
+margin-left:25px ;
 			}
-}	
-	
+}
+
 @media screen and (min-width: 1400px) and (max-width:1599px) {
 .wrapper > .info-banner, .area-logos{
 margin-left:60px ;}
 }
 
 @media screen and (max-width: 1500px) {
-.area-links{
-margin-left:93px;
-	}		
+    .area-links{
+    margin-left:93px;
+	}
 }
-	
-	
+
+
 /* Ajuste bg resolução até 960 */
 
-@media (max-width: 960px) {	
+@media (max-width: 960px) {
 .banner-home{
-background-position:3%;	
-	}	
+background-position:3%;
+	}
 }
 @media (max-width: 960px) and (min-width: 768px){
 .info-banner{
 margin-left:224px !important;			}
 }
-@media (max-width: 768px) and (min-width: 730px){		
+@media (max-width: 768px) and (min-width: 730px){
 .info-banner{
-margin-left:154px !important;	
+margin-left:154px !important;
 		}
+<<<<<<< HEAD
 }	
 @media screen and (max-width: 730px) and (min-width: 699px){		
+=======
+}
+@media screen and (max-width: 730px) and (min-width: 590px){
+>>>>>>> 100712d20e61db26ca367583c630794b024de405
 .p-text{
 font-size:12px !important;
 }
@@ -2638,6 +2816,7 @@ line-height:50px;
 margin-left:-56px;
 }
 .info-banner{
+<<<<<<< HEAD
 max-width:100% !important;	
 margin-left:167px !important;
 }
@@ -2647,11 +2826,19 @@ max-width:420px;
 .ut-l{
 margin-left:-10px;	
 }		
+=======
+max-width:432px !important;
+margin-left:167px !important;
+}
+.p-text{
+max-width:408px;}
+>>>>>>> 100712d20e61db26ca367583c630794b024de405
 }
 @media screen and (max-width: 701px) and (min-width:650px){
 .info-banner{
 margin:0; !important;}
 .banner-home{
+<<<<<<< HEAD
 padding-top:224px !important;	
 }
 .banner-home h1{
@@ -2803,6 +2990,9 @@ width:424px !important;
 .ut-l{
 	margin-left:21px;
 }
+=======
+padding-top:104px !important;
+>>>>>>> 100712d20e61db26ca367583c630794b024de405
 }
 @media screen and (max-width: 452px) and (min-width:425px) {	
 .info-banner{ margin:0 !important;}
@@ -2815,9 +3005,13 @@ background-repeat: no-repeat;
 background-position: center 0px;
 	}
 .banner-home h1{
+<<<<<<< HEAD
 padding-left:67px !important;	
 font-size:42px !important;
 line-height:40px !important;	
+=======
+padding-left:21px;
+>>>>>>> 100712d20e61db26ca367583c630794b024de405
 }
 .p-text{
 font-size:11px !important;

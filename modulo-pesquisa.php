@@ -1,7 +1,7 @@
 <article id="pesquisa" class"">
 	<div class="grid-curso">
-		<div class="grid-md">
-			<div class="title-search">		
+		<div class="grid-md footer-placement-left">
+			<div class="title-search">
 				<h3>Ache <span>seu polo.</span></h3>
 				<a href="javascript:void" class="window-help"><i class="help"></i></a>
 				<div class="balao">
@@ -38,6 +38,7 @@
 				</form>
 				<?php //echo do_shortcode('[searchandfilter fields="taxonomy" hierarchical="1" show_count="1" submit_label="Buscar"]'); ?>
 			</div>
+			<div id="to-home" class="footer-btn go-up"></div> <!-- botão -->
 		</div>
 	</div>
 </article>

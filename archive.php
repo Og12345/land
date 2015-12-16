@@ -9,17 +9,17 @@
 
 get_header(); ?>
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-		<?php 
-		if ( have_posts() ) : 
-			custom_breadcrumbs(); ?>
-			
+	<section id="primary" class="content-area busca-curso-page">
+		<main id="main" class="site-main busca-curso-placement" role="main">
+		<?php
+		if ( have_posts() ) :
+			//custom_breadcrumbs(); ?>
+
 			<header class="page-header grid-curso">
 				<h1 class="page-title">
 					<?php
 						if ( is_category() ) :
-							single_cat_title();
+							//single_cat_title();
 
 						elseif ( is_tag() ) :
 							single_tag_title();
@@ -79,27 +79,36 @@ get_header(); ?>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
-			<div class="grid-curso">
-				<div class="grid-md">
-					<?php while ( have_posts() ) : the_post(); ?>
-						<?php
-							/* Include the Post-Format-specific template for the content.
-							 * If you want to override this in a child theme, then include a file
-							 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-							 */
-							//get_template_part( 'content', get_post_format() );
-						?>					
-					<?php endwhile; ?>
-				</div>
-			</div>
-			<div class="grid-curso">
-				<div class="grid-md">
-				<?php
-					$cat = get_category( get_query_var( 'cat' ) );
-					$category = $cat->slug;
-					echo do_shortcode('[ajax_load_more post_type="post" category="'.$category.'" order="ASC" orderby="title" posts_per_page="6" button_label="Ver mais" container_type="div"]');
-					//sparkling_paging_nav(); 
-				?>
+			<div class="grid-curso curso-config">
+				<div class="grid-md full-search-course">
+					<h1> Ache seu curso. </h1>
+					<div id="descr-select">
+						<p>Porque estamos pedindo UF e cidade? <br/>O curso é realizado totalmente a distância e você conta com apoio de tutores para auxiliarem durante o percurso de seu curso. Além disso, as avaliações são realizadas no Polo de Educação a distância. Por isto é importante sabermos qual região procura.</p>
+					</div>
+					<div class="search-form">
+						<form method="GET" action="" class="meeting_search_form" id="meeting_search_form" data-ajaxurl="<?php echo home_url(); ?>/wp-admin/admin-ajax.php">
+							<fieldset>
+								<div class="select-area">
+										<?php parent_locations_select(); ?>
+								</div>
+								<div class="select-area">
+									<select name="cidade" id="cidade" disabled="disabled">
+										<option value="selecione">Selecione uma cidade ...</option>
+									</select>
+								</div>
+								<div>
+									<select name="curso" id="curso" disabled="disabled">
+										<option>Selecione um curso ...</option>
+									</select>
+								</div>
+								<div class="submit-area">
+									<a href="javascript:void" id="search" class="btn btn-default">Buscar</a>
+								</div>
+							</fieldset>
+						</form>
+						<?php //echo do_shortcode('[searchandfilter fields="taxonomy" hierarchical="1" show_count="1" submit_label="Buscar"]'); ?>
+					</div>
+					<div id="to-home" class="btn-path-go go-up"></div>
 				</div>
 			</div>
 
@@ -107,7 +116,7 @@ get_header(); ?>
 
 			<?php get_template_part( 'content', 'none' ); ?>
 
-		<?php endif; 
+		<?php endif;
 
 
 		?>
@@ -115,5 +124,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</section><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
