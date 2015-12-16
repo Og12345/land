@@ -2356,8 +2356,8 @@ form select:disabled{
   }
 
   .wrapper > div {
-    margin-right: auto !important;
-    margin-left: auto !important;
+    margin-right: auto ;
+    margin-left: auto ;
   }
 
   .video-home >.wrapper > .container-video {
@@ -2458,7 +2458,7 @@ form select:disabled{
   }
 
   .banner-home h2, .banner-home h1, .detalhes-home h2, .video-home h2 {
-    font-size: 35px;
+    font-size: 55px;
   }
 
   .itens .wrapper .container-infos {
@@ -2557,11 +2557,14 @@ form select:disabled{
   font-style: normal;
 }
 .info-banner h1, h2{
-	font-family: 'EA Sports Covers SC 1.5';
-	color:#fed309;
 	line-height:56px;
 	letter-spacing:0;
 }
+
+.info-banner h1{
+font-family: 'EA Sports Covers SC 1.5';
+	color:#fed309;	
+	}
 .info-banner{
 	/*padding:425px 0 0 153px;*/
 		}
@@ -2742,27 +2745,93 @@ float:left;  width:100%; text-align:left;
 .wrapper > .info-banner, .area-logos{
 margin-left:-47px;
 }
+<<<<<<< HEAD
 		}
 
+=======
+}
+		
+>>>>>>> 82901520359f6ff26df85bd8b5b67713b5725c6d
 @media screen and (min-width: 1680px) and (max-width: 1919px) {
 .wrapper > .info-banner, .area-logos{
 margin-left:6px;
 }
-
 }
 
 @media screen and (min-width: 1599px) and (max-width:1679px) {
 .wrapper > .info-banner, .area-logos{
 margin-left:25px ;
 			}
+<<<<<<< HEAD
 		}
 
+=======
+}	
+	
+>>>>>>> 82901520359f6ff26df85bd8b5b67713b5725c6d
 @media screen and (min-width: 1400px) and (max-width:1599px) {
 .wrapper > .info-banner, .area-logos{
 margin-left:60px ;}
-		}
+}
+
 @media screen and (max-width: 1500px) {
 .area-links{
 margin-left:93px;
+<<<<<<< HEAD
 	}
 	}
+=======
+	}		
+}
+	
+	
+/* Ajuste bg resolução até 960 */
+
+@media (max-width: 960px) {	
+.banner-home{
+background-position:3%;	
+	}	
+}
+@media (max-width: 960px) and (min-width: 768px){
+.info-banner{
+margin-left:224px !important;			}
+}
+@media (max-width: 768px) and (min-width: 730px){		
+.info-banner{
+margin-left:154px !important;	
+		}
+}	
+@media screen and (max-width: 730px) and (min-width: 590px){		
+.p-text{
+font-size:12px !important;
+}
+.banner-home h1{
+font-size:40px;
+line-height:42px;
+}
+.info-banner{
+max-width:432px !important;	
+margin-left:167px !important;
+}
+.p-text{
+max-width:408px;}				
+}
+@media screen and (max-width: 590px) and (min-width:500px){
+.info-banner{
+margin:0; !important;}
+.banner-home{
+padding-top:104px !important;	
+}
+.banner-home h1{
+padding-left:21px;			
+}
+.p-text{
+max-width:484px;}
+}
+
+@media screen and (max-width: 590px) and (min-width:575px){
+.banner-home{
+	background:url(img/bg-banner-home-mobile.jpg) no-repeat;;
+	background-size:cover;}
+}
+>>>>>>> 82901520359f6ff26df85bd8b5b67713b5725c6d

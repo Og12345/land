@@ -1,8 +1,13 @@
 <article id="pesquisa" class"">
 	<div class="grid-curso">
 		<div class="grid-md">
+<<<<<<< HEAD
 			<div class="title-search">
 				<h3>Ache <span>seu Polo.</span></h3>
+=======
+			<div class="title-search">		
+				<h3>Ache <span>seu polo.</span></h3>
+>>>>>>> 82901520359f6ff26df85bd8b5b67713b5725c6d
 				<a href="javascript:void" class="window-help"><i class="help"></i></a>
 				<div class="balao">
 					<p>
