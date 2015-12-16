@@ -42,7 +42,29 @@
 					}
 				});
 			});
-
 		});
+		// ***
+
+		// Página Cursos
+		var placement = $(".busca-curso-placement");
+		if(placement.length > 0){
+			$('.site-content').css({
+				'background':'#dfe1e2'
+			});
+			$('.scroll-to-top').remove();
+		}
+		// ***
+
+		//Todos os controles de páginas
+
+		/* ### Botão da página de curso ### */
+		$('#to-home').on('click',function(){
+			var url = window.location.host;
+			window.location.assign(url);
+		});
+		/* ### */
+
+
+		// ***
 	});
 })(jQuery);

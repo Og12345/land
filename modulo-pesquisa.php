@@ -1,15 +1,8 @@
 <article id="pesquisa" class"">
 	<div class="grid-curso">
 		<div class="grid-md">
-<<<<<<< HEAD
-			<div class="title-search">		
-
-				<h3>Ache <span>seu polo.</span></h3>
-
-=======
 			<div class="title-search">
 				<h3>Ache <span>seu Polo.</span></h3>
->>>>>>> origin/master
 				<a href="javascript:void" class="window-help"><i class="help"></i></a>
 				<div class="balao">
 					<p>
