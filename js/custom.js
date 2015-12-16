@@ -55,13 +55,46 @@
 		}
 		// ***
 
+		// Controle de size
+		var new_height = $(window).height() - 160 // 160 pois desconta o tamanho do menu e mais um pouco!
+		$('.box-video').css({
+			'height': new_height
+		});
+		$('.box-footer').children().css({
+			'height': new_height + 100
+		});
+		// ***
+
 		//Todos os controles de páginas
 
 		/* ### Botão da página de curso ### */
-		$('#to-home').on('click',function(){
+		$('#page-home').on('click',function(){
 			var url = window.location.host;
 			window.location.assign(url);
 		});
+
+		var body = $('body,html'); //config ---
+
+		// Botão para o box do video ---
+		$('#to-video').on('click',function(){
+			var path = $('.box-video');
+			var calc = path.offset().top - 150;
+			body.animate({scrollTop:calc},1000);
+		});
+		// ---
+
+		$('#to-footer').on('click',function(){
+			var path = $('.box-footer');
+			var calc = path.offset().top - 50;
+			body.animate({scrollTop:calc},1000);
+		});
+
+		$('#to-home').on('click',function(){
+			var path = $('.box-footer');
+			var calc = 0;
+			body.animate({scrollTop:calc},1000);
+		});
+
 		/* ### */
 
 

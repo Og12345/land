@@ -56,7 +56,7 @@ $titulo_video 	= get_field( $home_fields['titulo_video']);
 $video 			= get_field( $home_fields['video']);
 ?>
 	<div id="post-<?php the_ID(); ?>" <?php post_class('banner-home'); ?>>
-		<div class="wrapper">
+		<div class="wrapper box-home">
 			<div class="info-banner">
 				<h2><?php echo $titulo; ?></h2>
 				<h1><?php echo $subtitulo; ?></h1>
@@ -86,7 +86,7 @@ de mais de 60 cursos entre de graduação, pós-graduação e<br /> cursos livre
 		</div>
 	</div>
 	<div id="itens" <?php post_class('itens detalhes-home'); ?>>
-		<div class="wrapper content-placement">
+		<div class="wrapper content-placement box-itens">
 			<div class="container-infos">
 				<h2><?php echo $titulo_detalhes; ?></h2>
 
@@ -128,11 +128,11 @@ de mais de 60 cursos entre de graduação, pós-graduação e<br /> cursos livre
 			<div>
 				<a href="#secondary" title="<?php echo $scroll_form; ?>" class="link cta-form scroll"><?php echo $scroll_form; ?></a>
 			</div>
-			<div id="to-home" class="btn-click go-down"></div> <!-- botão -->
+			<div id="to-video" class="btn-click go-down"></div> <!-- botão -->
 		</div>
 	</div>
 	<div id="post-<?php the_ID(); ?>" <?php post_class('video-home'); ?>>
-		<div class="wrapper content-placement">
+		<div class="wrapper content-placement box-video">
 			<div class="container-video">
 				<h2><?php echo $titulo_video; ?></h2>
 
@@ -144,12 +144,12 @@ de mais de 60 cursos entre de graduação, pós-graduação e<br /> cursos livre
 			<div>
 				<a href="#secondary" title="<?php echo $scroll_form; ?>" class="link cta-form scroll"><?php echo $scroll_form; ?></a>
 			</div>
-			<div id="to-home" class="video-btn go-down"></div> <!-- botão -->
+			<div id="to-footer" class="video-btn go-down"></div> <!-- botão -->
 		</div>
 	</div>
-	<?php
-		include 'modulo-pesquisa.php';
-	?>
+	<div class="box-footer">
+		<?php require_once('modulo-pesquisa.php'); ?>
+	</div>
 
 	<?php
 		get_sidebar();

@@ -2218,6 +2218,7 @@ color:	#FED309;
 #pesquisa{
   background: #213b6a url('img/bg-pesquisa.png') center left no-repeat;
   padding: 50px 0;
+  background-position: 0% 100%;
 }
 
 #pesquisa .title-search{
@@ -2711,13 +2712,17 @@ float:left;  width:100%; text-align:left;
   appearance:none;
 }
 
-.btn-path-go, .btn-click,.video-btn{
+.btn-path-go, .btn-click,.video-btn,.footer-btn{
   position: absolute;
   bottom: 10%;
-  width: 50px;
-  height: 50px;
+  width: 50px !important;
+  height: 50px !important;
   left: 45%;
   cursor: pointer;
+}
+
+.footer-placement-left{
+  position: relative !important;
 }
 
 .btn-click{
@@ -2726,18 +2731,27 @@ float:left;  width:100%; text-align:left;
 }
 
 .video-btn{
-  left: 25% !important;
-  bottom: -20% !important;
+  left: 27% !important;
+  bottom: 0% !important;
+}
+
+.footer-btn{
+  left: 46% !important;
+  bottom: -40% !important;
 }
 
 .go-up{
-  background: url('img/go-up.png') no-repeat;
+  background: url('img/go-up-footer.png') no-repeat;
   background-size: 90% 90%;
 }
 
 .go-down{
   background: url('img/go-down.png') no-repeat;
   background-size: 90% 90%;
+}
+
+.box-footer{
+  position: relative !important;
 }
 /*** end ***/
 
