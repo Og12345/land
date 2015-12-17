@@ -90,34 +90,34 @@ de mais de 60 cursos entre de graduação, pós-graduação e<br /> cursos livre
 			<div class="container-infos">
 				<h2><?php echo $titulo_detalhes; ?></h2>
 
-				<div>
+				<div class="sdw">
 					<div class="icone-detalhes">
 						<img src="<?php echo $imagem_det_1['url']; ?>" alt="<?php echo $imagem_det_1['alt']; ?>" />
 					</div>
 					<div class="texto-detalhes">
-						<strong><?php echo  $titulo_det_1; ?></strong>
+						<strong class="titulo-detalhe"><?php echo  $titulo_det_1; ?></strong>
 						<p>
 							<?php echo  $desc_det_1; ?>
 						</p>
 					</div>
 				</div>
-				<div>
+				<div class="sdw">
 					<div class="icone-detalhes">
 						<img src="<?php echo $imagem_det_2['url']; ?>" alt="<?php echo $imagem_det_2['alt']; ?>" />
 					</div>
 					<div class="texto-detalhes">
-						<strong><?php echo  $titulo_det_2; ?></strong>
+						<strong class="titulo-detalhe"><?php echo  $titulo_det_2; ?></strong>
 						<p>
 							<?php echo  $desc_det_2; ?>
 						</p>
 					</div>
 				</div>
-				<div>
+				<div class="sdw">
 					<div class="icone-detalhes">
 						<img src="<?php echo $imagem_det_3['url']; ?>" alt="<?php echo $imagem_det_3['alt']; ?>" />
 					</div>
 					<div class="texto-detalhes">
-						<strong><?php echo  $titulo_det_3; ?></strong>
+						<strong class="titulo-detalhe"><?php echo  $titulo_det_3; ?></strong>
 						<p>
 							<?php echo  $desc_det_3; ?>
 						</p>
@@ -125,10 +125,11 @@ de mais de 60 cursos entre de graduação, pós-graduação e<br /> cursos livre
 				</div>
 			</div>
 
-			<div>
-				<a href="#secondary" title="<?php echo $scroll_form; ?>" class="link cta-form scroll"><?php echo $scroll_form; ?></a>
+			<div class="in-azul">
+				<a  title="<?php echo $scroll_form; ?>" class="link cta-form scroll azul" onclick="Mudarestado('form-sidebar')"><?php echo $scroll_form; ?></a>
+                <div id="to-video" class="btn-click go-down "></div>
 			</div>
-			<div id="to-video" class="btn-click go-down"></div> <!-- botão -->
+			 <!-- botão -->
 		</div>
 	</div>
 	<div id="post-<?php the_ID(); ?>" <?php post_class('video-home'); ?>>
@@ -142,12 +143,13 @@ de mais de 60 cursos entre de graduação, pós-graduação e<br /> cursos livre
 			</div>
 
 			<div>
-				<a href="#secondary" title="<?php echo $scroll_form; ?>" class="link cta-form scroll"><?php echo $scroll_form; ?></a>
+				<a  title="<?php echo $scroll_form; ?>" class="link cta-form scroll" onclick="Mudarestado('form-sidebar')" ><?php echo $scroll_form; ?></a>
+                <div id="to-footer" class="video-btn go-down-b"></div>
 			</div>
-			<div id="to-footer" class="video-btn go-down"></div> <!-- botão -->
+			 <!-- botão -->
 		</div>
 	</div>
-	<div class="box-footer">
+    <div class="box-footer">
 		<?php require_once('modulo-pesquisa.php'); ?>
 	</div>
 
